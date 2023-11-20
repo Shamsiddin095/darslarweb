@@ -80,6 +80,17 @@ main {
   text-align: center;
   padding: 10px;
 }
+.savol span {
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+  padding: 20px;
+  background: rgb(215, 152, 68);
+}
+.savol ol li {
+  font-size: 20px;
+  text-align: left;
+}
 .tips h2 {
   text-align: center;
 }
@@ -114,7 +125,7 @@ label:hover {
   max-width: 100%;
 }
 .content img {
-  max-width: 100%;
+  width: 100%;
 }
 .content button {
   background: rgb(39, 139, 121);
@@ -131,7 +142,7 @@ input:checked ~ label ~ .content {
   display: flex;
 }
 #datatypes {
-  display: block;
+  display: none;
 }
 
 #operatorlar {
@@ -144,7 +155,7 @@ input:checked ~ label ~ .content {
 }
 #functions {
   border-top: 10px solid rgb(68, 81, 86);
-  display: none;
+  display: block;
 }
 #objects {
   border-top: 10px solid rgb(68, 81, 86);

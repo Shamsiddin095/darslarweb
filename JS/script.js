@@ -105,38 +105,7 @@ function if1() {
   }
   alert("qiymat:" + natija);
 }
-function if2() {
-  let a = +prompt("a son = ");
-  let b = +prompt("b son = ");
 
-  yigindi = a + b;
-  let natija;
-  if (yigindi < 4) {
-    natija = "Below";
-  } else {
-    natija = " Over";
-  }
-  alert("natija:" + natija);
-}
-function if3() {
-  alert("Ro'yhatdan o'tish uchun login parol kiriting:");
-  let login = prompt("Login kiriting:");
-  let parol = +prompt(" 4 talik son parol kiriting :");
-  alert("Ro'yhatdan o'tdingiz:");
-  alert("Parol va login kiriting:");
-  let l = prompt("loginingiz:");
-  let p = +prompt("parolingiz");
-
-  if (!l || !p) {
-    alert("NuN NuN NuN NuN NuN NuN NuN NuN ");
-  } else if (l == login && p == parol) {
-    alert("Muvaffaqiyatli");
-    window.location.href =
-      "https://kun.uz/news/2023/11/09/dunyo-siyosiy-arxitekturasi-tom-manoda-ozgarmoqda-shavkat-mirziyoyev";
-  } else {
-    alert("Notug'ri parol yoki login");
-  }
-}
 function oper1() {
   let son1 = +prompt("son1 = ");
   let son2 = +prompt("son2 = ");
@@ -157,318 +126,74 @@ function for1() {
 
   alert(natija);
 }
-function while1() {
-  let n = +prompt("n sonini kiriting:");
-  let i = 1;
-  let natija = "";
-
-  while (i <= n) {
-    natija += i + " ";
-    i++;
+function func1() {
+  function keyingison(num) {
+    return num + 1;
   }
-
-  alert(natija);
-}
-function whiledo1() {
-  let n = +prompt("n sonini kiriting:");
-  let i = 1;
-  let natija = "";
-
-  do {
-    natija += i + " ";
-    i++;
-  } while (i <= n);
-
-  alert(natija);
+  const num = +prompt("son kiriting:");
+  const natija = keyingison(num);
+  alert("naitja: " + natija);
 }
 
-function for2() {
-  let n = +prompt("n sonini kiriting:");
-  let natija = "";
-  for (let i = n; i >= 1; i--) {
-    natija += i + " ";
+function func2() {
+  function yigindi(num1, num2) {
+    return num1 + num2;
   }
-  alert(natija);
+  const num1 = +prompt("1-son :");
+  const num2 = +prompt("1-son :");
+  const natija = yigindi(num1, num2);
+  alert("naitja: " + natija);
 }
-function while2() {
-  let n = +prompt(" n  sonini kiriting:");
-  let i = n;
-  let natija = "";
-
-  while (i >= 1) {
-    natija += i + " ";
-    i--;
+function func3() {
+  function sekund(soat) {
+    return soat * 3600;
   }
-  alert(natija);
+  const soat = +prompt("soatni kiriting :");
+  const natija = sekund(soat);
+  alert("naitja: " + natija + " sekund");
 }
-function whiledo2() {
-  let n = +prompt(" n  son kiriting:");
-  let i = n;
-  let natija = " ";
-  do {
-    natija += i + " ";
-    i--;
-  } while (i >= 1);
-  alert(natija);
-}
-
-function for3() {
-  let n = +prompt("son kiriting:");
-  var natija = "";
-
-  for (let i = 2; i <= n; i += 2) {
-    natija += i + " ";
+function func4() {
+  function kvadrat_per_yuzi(tomoni) {
+    return tomoni;
   }
-  alert(natija);
+  const tomoni = +prompt("kvadrat tomonini qiymati :");
+  const natija = kvadrat_per_yuzi(tomoni);
+  per = natija * 4;
+  yuzi = natija * natija;
+  alert("Kvadrat peremetri = : " + per + "\n kvadrat yuzi = " + yuzi);
 }
-function while3() {
-  let n = +prompt(" son kiriting:");
-  let i = 1;
-  let natija = "";
-
-  while (i <= n) {
-    if (i % 2 === 0) {
-      natija += i + " ";
+function func5() {
+  function juftyokitoq(son) {
+    if (son % 2 === 0) {
+      return "juft";
+    } else {
+      return " toq";
     }
-    i++;
   }
-  alert(natija);
-}
-function whiledo3() {
-  let n = +prompt("son kiriting:");
-  let i = 2;
-  let natija = "";
-  do {
-    natija += i + " ";
-    i += 2;
-  } while (i <= n);
-  alert(natija);
+  const son = +prompt("son kiriting:");
+  const natija = juftyokitoq(son);
+  alert(son + " soni " + natija);
 }
 
-function for4() {
-  let n = +prompt("son kiriting:");
-  let natija = "";
-
-  for (let i = 1; i <= n; i += 2) {
-    natija += i + " ";
+function func6() {
+  function musbatyokimanfiy(son) {
+    if (son > 0) {
+      return "musbat";
+    } else {
+      return " manfiy";
+    }
   }
-  alert(natija);
+  const son = +prompt("son kiriting:");
+  const natija = musbatyokimanfiy(son);
+  alert(son + " soni " + natija);
 }
-
-function while4() {
-  let n = +prompt("son kiriting:");
-  let i = 1;
-  let natija = "";
-  while (i <= n) {
-    natija += i + " ";
-    i += 2;
+function func7() {
+  function kunsoat(yosh) {
+    return yosh;
   }
-  alert(natija);
+  const yosh = +prompt("yoshingizni kiriting:");
+  const natija = kunsoat(yosh);
+  kun = natija * 365;
+  soat = kun * 24;
+  alert(`siz ${kun} kun ${soat} soat yashadiz `);
 }
-function whiledo4() {
-  let n = +prompt("son kiriting:");
-  let i = 1;
-  let natija = "";
-  do {
-    natija += i + " ";
-    i += 2;
-  } while (i <= n);
-  alert(natija);
-}
-
-function for5() {
-  let n = +prompt("son kiriting:");
-  let natija = "";
-
-  for (let i = n; i >= 1; i--) {
-    natija += i + " ";
-  }
-  alert(natija);
-}
-function while5() {
-  let n = +prompt("son kiriting:");
-  let i = n;
-  let natija = "";
-
-  while (i >= 1) {
-    natija += i + " ";
-    i--;
-  }
-  alert(natija);
-}
-function whiledo5() {
-  let n = +prompt("son kiriting:");
-  let i = n;
-  let natija = "";
-  do {
-    natija += i + " ";
-    i--;
-  } while (i >= 1);
-  alert(natija);
-}
-
-function for6() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-
-  for (let i = 1; i <= n; i++) {
-    natija += i;
-  }
-  alert("n gacha sonlar yig'indisi: " + natija);
-}
-function while6() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-  let i = 1;
-
-  while (i <= n) {
-    natija += i;
-    i++;
-  }
-  alert("n gacha sonlar yig'indisi: " + natija);
-}
-function whiledo6() {
-  let n = +prompt("son kiriting:");
-  let natija = 0;
-  var i = 1;
-
-  do {
-    natija += i;
-    i++;
-  } while (i <= n);
-  alert("n gacha sonlar yig'indisi: " + natija);
-}
-function for7() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-
-  for (let i = 2; i <= n; i += 2) {
-    natija += i;
-  }
-  alert("Barcha juft sonlar yig'indisi: " + natija);
-}
-function while7() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-  let i = 2;
-
-  while (i <= n) {
-    natija += i;
-    i += 2;
-  }
-  alert("Barcha juft sonlar yig'indisi: " + natija);
-}
-function whiledo7() {
-  let n = +prompt("son kiriting:");
-  let natija = 0;
-  let i = 2;
-
-  do {
-    natija += i;
-    i += 2;
-  } while (i <= n);
-  alert("Barcha juft sonlar yig'indisi: " + natija);
-}
-function for8() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-
-  for (let i = 1; i <= n; i += 2) {
-    natija += i;
-  }
-  alert("Barcha toq sonlar yig'indisi: " + natija);
-}
-function while8() {
-  let n = +prompt("son kiriting:");
-  let natija = 0;
-  let i = 1;
-
-  while (i <= n) {
-    natija += i;
-    i += 2;
-  }
-  alert("Barcha toq sonlar yig'indisi: " + natija);
-}
-function whiledo8() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-  let i = 1;
-
-  do {
-    natija += i;
-    i += 2;
-  } while (i <= n);
-  alert("Barcha toq sonlar yig'indisi: " + natija);
-}
-
-function for9() {
-  let n = +prompt(" son kiriting:");
-  let natija = 1;
-
-  for (let i = 1; i <= n; i++) {
-    natija *= i;
-  }
-  alert("Barcha sonlar ko'paytmasi: " + natija);
-}
-function while9() {
-  let n = +prompt(" son kiriting:");
-  let natija = 1;
-  let i = 1;
-
-  while (i <= n) {
-    natija *= i;
-    i++;
-  }
-  alert("Barcha sonlar ko'paytmasi: " + natija);
-}
-function whiledo9() {
-  let n = +prompt("son kiriting:");
-  let natija = 1;
-  let i = 1;
-
-  do {
-    natija *= i;
-    i++;
-  } while (i <= n);
-  alert("Barcha sonlar ko'paytmasi: " + natija);
-}
-function for10() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-
-  for (let i = 1; i <= n; i++) {
-    natija += i * i;
-  }
-  alert("Barcha natural sonlar kvadratlari yig'indisi: " + natija);
-}
-function while10() {
-  let n = +prompt("son kiriting:");
-  let natija = 0;
-  let i = 1;
-
-  while (i <= n) {
-    natija += i * i;
-    i++;
-  }
-  alert("Barcha natural sonlar kvadratlari yig'indisi: " + natija);
-}
-function whiledo10() {
-  let n = +prompt(" son kiriting:");
-  let natija = 0;
-  let i = 1;
-
-  do {
-    natija += i * i;
-    i++;
-  } while (i <= n);
-  alert("Barcha natural sonlar kvadratlari yig'indisi: " + natija);
-}
-//DATA TYPES DARS
-
-// let name = "shamsiddin"; // string
-// let age = 19; //number
-// let isMerried = true; // Boolean
-// let mynull = null; //null
-// let MyUndefined = undefined; // undefined
-// let sym = Symbol("Josh"); // symbol
-// let MybigInt = BigInt(100); // bigInt
