@@ -131,7 +131,7 @@ input:checked ~ label ~ .content {
   display: flex;
 }
 #datatypes {
-  display: none;
+  display: block;
 }
 
 #operatorlar {
@@ -140,7 +140,7 @@ input:checked ~ label ~ .content {
 }
 #loops {
   border-top: 10px solid rgb(68, 81, 86);
-  display: block;
+  display: none;
 }
 #functions {
   border-top: 10px solid rgb(68, 81, 86);
