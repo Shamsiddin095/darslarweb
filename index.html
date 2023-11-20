@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>darslar</title>
+  </head>
+  <body>
+    <main>
+      <div class="sidebar">
+        <button onclick="datatypes()">1-dars data types</button>
+        <button onclick="operatorlar()">2-dars operatorlar</button>
+        <button onclick="loops()">3-dars loops</button>
+        <button onclick="functions()">4-dars function</button>
+        <button onclick="objects()">5-dars object</button>
+        <button onclick="endi()">6-dars endi bo'ladi</button>
+      </div>
+      <div id="datatypes">
+        <!--task1-->
+        <div class="savol">
+          <h1>Javascriptda «Data types»</h1>
+          <p>
+            JavaScriptda har bir qiymat o’zining ma’lum bir tipiga ega bo’ladi.
+            JavaScriptda Data types Misol uchun let age = 19; bu holatda age
+            ning tipi number, ya’ni raqam turiga mansub. agar biz 19 qiymatini
+            «19» ga almashtirsak, age ning tipi nimaga teng bo’ladi ? Ha, string
+            ga teng bo’ladi. Keling endi barcha «data type» lar bilan yaqinroq
+            tanishamiz.
+          </p>
+          <img src="./img/datatypes_img.png" alt="img" />
+          <p>
+            1.Primitive tiplar o’zida faqatgina yagona qiymatni saqlay oladigan
+            tiplardir. Bu tiplarga 7 ta tiplar kiradi. Ular haqida endi gap
+            ketadi. <br />
+            2. Non-Primitive tiplar esa o’zida bir qancha tiplardan tuzilgan
+            ko’plab qiymatlarni saqlay oluvchi tiplardir. Bu turga 1 ta tip
+            kiradi.
+          </p>
+          <div class="tips">
+            <h2>Primitive data types</h2>
+            <ol>
+              <li>number</li>
+              <li>string</li>
+              <li>Boolean</li>
+              <li>Null</li>
+              <li>Undefined</li>
+              <li>Symbol</li>
+              <li>BigInt</li>
+            </ol>
+            <p>
+              bu tiplarning barchasi primitive, chunki bu tiplar faqatgina
+              yagona qiymatni o’zida saqlay oladi. <br />
+              Ikkinchi qiymatni qo’sha olmaymiz. Keling endi misollarga o’tamiz.
+              <br />
+              <b
+                >Ma'lumot uchun pastdagi tugmani bosib ko'ring unda siz script
+                yozilishni rasmda ifodasini ko'rasiz</b
+              >
+            </p>
+          </div>
+
+          <input type="checkbox" id="task1" />
+          <label for="task1">Bosing</label>
+          <div class="content">
+            <img src="./img/datatypes_img2.png" alt="img" />
+            <button onclick="type1()">click here..</button>
+          </div>
+        </div>
+        <hr />
+        <div class="savol">
+          <h1>Non-Primitive types»</h1>
+          <p>
+            Demak, biz endi gaplashadigan mavzuyimiz Non-primitive tiplar. Bunga
+            tepada aytganimdek faqatgina birgina tip kiradi. Bu ham bo’lsa
+            Object tipi. Nega ? Chunki Object lar o’zida bir qancha qiymatni
+            saqlay olish xususiyatiga ega va ular Reference type hisoblanadi. Bu
+            haqida alohida maqola yozishim kerak. <br />
+            Bunga misol: pastki tugmada
+          </p>
+
+          <input type="checkbox" id="task2" />
+          <label for="task2">Bosing</label>
+          <div class="content">
+            <img src="./img/datatypes_img3.png" alt="img" />
+            <button onclick="type2()">click here..</button>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <!--Begin container-->
+      <div id="operatorlar">
+        <!--begin5-->
+        <div class="savol">
+          <h1>JavaScript Operatorlar</h1>
+          <p>
+            JavaScript dasturlash tilida ham boshqa dasturlash tillari singari
+            operatorlar mavjud. Bularga quyidagilarni misol keltirishimiz
+            mumkin.
+          </p>
+          <ul>
+            <li>Arifmetik operatorlar</li>
+            <li>Tayinlash operatorlari</li>
+            <li>String Opertorlar</li>
+            <li>Solishtirish operatorlari</li>
+            <li>Mantiqiy opertorlar</li>
+            <li>Bitli operatorlar</li>
+          </ul>
+          <h2>JavaScript arifmetik operatorlari</h2>
+          <p>
+            Arifmetik operatorlar raqamlar ustida arifmetikani bajarish uchun
+            ishlatiladi: <br />
+            "+" - Qo'shish <br />
+            "-" - Ayirish <br />
+            "*" - Ko'paytirish <br />
+            "**" - Eksponentatsiya (ES2016) <br />
+            "/" - Bo'lish <br />
+            "%" - Modul (boʻlinish qoldigʻi) <br />
+            "++" - 1 ga qo'shib borish <br />
+            "--" - 1 ga kamaytirib borish
+          </p>
+          <h2>JavaScript Tayinlash operatorlari</h2>
+          <img src="./img/oper_img1.png" alt="img" />
+          <h2>JavaScript String operatorlari</h2>
+          <img src="./img/oper_img2.png" alt="img" />
+          <h2>JavaScript solishtirish operatorlari</h2>
+          <p>
+            "==" - ga teng <br />
+            "=== " - qatiyan tenglikni tekshiradi typegacha<br />
+            "!=" - teng emas <br />
+            "!==" - qiymat teng emas yoki teng emas <br />
+            ">" - dan katta <br />
+            "<" - dan kichik <br />
+            ">=" - dan katta yoki teng
+            <br />
+            "<=" - dan kichik yoki teng
+          </p>
+          <h2>JavaScript mantiqiy operatorlari</h2>
+          <p>
+            "&&" - mantiqiy "va" <br />
+
+            "||" - mantiqiy "yoki" <br />
+
+            "!" - mantiqiy "emas"﻿
+          </p>
+          <input type="checkbox" id="oper1" />
+          <label class="begin_label" for="oper1">Bosing</label>
+          <div class="content">
+            <img src="./img/oper_img3.png" alt="img" />
+            <button onclick="oper1()">click here..</button>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <!--loops-->
+      <div id="loops">
+        <!--for-->
+        <div class="savol">
+          <h1>For Loop (Takrorlanuvchi sikl operatori).</h1>
+          <h2>Takrorlanuvchi sikl operatorlari</h2>
+          <p>
+            O'z nomi bilan ma'lum bo'lib turibdi takrorlanuvchi ya'ni qandaydir
+            jarayonni qayta va qayta takrorlanishidir. Yerning quyosh atrofida
+            aylanishi yil fasllarning almashinishi va h.k.larni misol qilib
+            keltirish mumkin. Takrorlanuvchi ish harakatlar qandaydir shartlar
+            asosida bajariladi. Ularning boshlang'ich, oxirgi nuqtalari va
+            bajarilish davriyligi mavjud bo'ladi. Misol uchun, yerning quyosh
+            atrofida aylanishini olsak, boshlang'ich nuqta 1-kun ya'ni 1-yanvar
+            oxirgi nuqta 365-kun bu esa 31-dekabr takrorlanishi 1 kunga teng.
+            Atrofimizda bunga o'xshash takrorlanvchi ish harakatlar shunchalik
+            ko'pki, ularni sanab tugata olmaymiz. Misol tariqasida kundalik
+            hayotimizda doimiy sodir bo'ladigan bir jarayoni tahlil qilib, uning
+            javada dasturiy ko'rinishi qanday bo'lishini ko'rib chiqsak. Misol:
+            Tasavvur qiling ovqat tayyorlash uchun 10 ta kartoshkani tozalashga
+            oldik. Qo'limizda 10 ta kartoshka bor ularni tozalash uchun birinchi
+            kartoshkadan boshlab 10-kartoshkagacha tozalamaguncha xar bir
+            kartoshkani birma-bir tozalab chiqamiz. O'z-o'zidan ko'rinib turibdi
+            kartoshka tozalash jarayoni ketma-ket sodir bo'lyapti(bu jarayon
+            siklga misol bo'la oladi) Tozalangan kartoshkalar o'sib borish
+            qiymati 1 ga teng (chunki ikki yoki undan oshiq kartoshkani bir
+            vaqtda tozalab bo'lmaydi odatda) Boshlang'ich qiymati ham 1 ga teng
+            Agar kartoshkani tozalash jarayonida kartoshkani iste'molga yaroqsiz
+            joylari bo'lsa, kesib tashlanadi ya'ni inson miyasida shu shartlar
+            tekshiriladi. Bu jarayonni tozalangan kartoshkalar soni 10 ga teng
+            bo'lguncha amalga oshiramiz. Keling endi bu jarayonlarni java da
+            dasturini tuzib chiqaylik.
+          </p>
+          <img src="./img/loop_img1.png" alt="img" />
+          <p>
+            Sikl boshlangandan sikl sharti false(yolg'on) qiymat bo'lmaguncha
+            davom etadi. Sikl sharti false bo'lgan sikl tugatiladi. Misol: 1 dan
+            10 gacha bo'lgan sonlarni ekranda chiqarish
+          </p>
+          <input type="checkbox" id="for1" />
+          <label class="if_label" for="for1">Bosing</label>
+          <div class="content">
+            <img src="./img/loop_img2.png" alt="img" />
+            <button onclick="for1()">click here..</button>
+          </div>
+          <p>
+            Siklning boshlang'ich qiymati 1 ga teng takrorlanishi ham 1 ga teng
+            i ning qiymati o'sib borib qiymat 10 ga teng bo'lmaguncha davom
+            etadi. Yanada tushunarliroq bo'lishi uchun boshqa bir misolni ham
+            ko'rib chiqsak. Berilgan sondan shu songacha bo'lgan raqamlar
+            orasida 3 va 5 ga bo'linadigan raqamlar sonini topish.
+          </p>
+          <img src="./img/loop_img3.png" alt="img" />
+        </div>
+        <hr />
+      </div>
+      <div id="functions">
+        <!--case5-->
+        <div class="savol">
+          <h1>
+            case5 . a va b son kiritilsin va unda bajariluvchi amal tanlansin va
+            natija chiqarilsin.
+          </h1>
+          <input type="checkbox" id="case5" />
+          <label class="case_label" for="case5">Case_5</label>
+          <div class="content">
+            <img src="./img/case5.png" alt="img" />
+            <button onclick="case5()">click here..</button>
+          </div>
+        </div>
+        <!--case6-->
+        <div class="savol">
+          <h1>
+            case6 . Ifodalar berilgan 1 Detsimetr 2 kilometr 3 metr ... ifoda
+            tanlab qiymat kiritilganda metrga o'giruvchi programma tuzilsin.
+          </h1>
+          <input type="checkbox" id="case6" />
+          <label class="case_label" for="case6">Case_6</label>
+          <div class="content">
+            <img src="./img/case6.png" alt="img" />
+            <button onclick="case6()">click here..</button>
+          </div>
+        </div>
+        <!--case7-->
+        <div class="savol">
+          <h1>
+            case7 . 1 Kilogram 2 Milligram 3 gramm 4 Tonna 5 senter berilgan
+            qiymatni kilogrammda ifodalovchi programma tuzilsin.
+          </h1>
+          <input type="checkbox" id="case7" />
+          <label class="case_label" for="case7">Case_7</label>
+          <div class="content">
+            <img src="./img/case7.png" alt="img" />
+            <button onclick="case7()">click here..</button>
+          </div>
+        </div>
+        <!--if davomi -->
+      </div>
+      <div id="objects">
+        <!--if10-->
+        <div class="savol">
+          <h1>
+            If10. A va B butun sonlar berilgan Agar o'zgaruvchilar o'zaro teng
+            bo'lmasa A va B o'zgaruvchilar yig'indini o'zlashtirsin.Agar teng
+            bo'lsa 0 ni o'zlashtirsin . A va B ni qiymati ekranga chiqarilsin.
+          </h1>
+          <input type="checkbox" id="if10" />
+          <label class="if_davomi_label" for="if10">If10</label>
+          <div class="content">
+            <img src="./img/if10.png" alt="img" />
+            <button onclick="if10()">click here..</button>
+          </div>
+        </div>
+
+        <!--if11-->
+        <div class="savol">
+          <h1>
+            If11. A va B butun sonlar berilgan Agar o'zgaruvchilar o'zaro teng
+            bo'lmasa A va B kattasini o'zlashtirsin.Agar teng bo'lsa 0 ni
+            o'zlashtirsin . A va B ni qiymati ekranga chiqarilsin.
+          </h1>
+          <input type="checkbox" id="if11" />
+          <label class="if_davomi_label" for="if11">If11</label>
+          <div class="content">
+            <img src="./img/if11.png" alt="img" />
+            <button onclick="if11()">click here..</button>
+          </div>
+        </div>
+        <!--if12-->
+        <div class="savol">
+          <h1>
+            If12. Uchta son berilgan kichigini aniqlovchi dastur tuzilsin.
+          </h1>
+          <input type="checkbox" id="if12" />
+          <label class="if_davomi_label" for="if12">If12</label>
+          <div class="content">
+            <img src="./img/if12.png" alt="img" />
+            <button onclick="if12()">click here..</button>
+          </div>
+        </div>
+        <!--if13-->
+        <div class="savol">
+          <h1>If13. Uchta son berilgan ular orasidan o'rtachasini aniqlash.</h1>
+          <input type="checkbox" id="if13" />
+          <label class="if_davomi_label" for="if13">If13</label>
+          <div class="content">
+            <img src="./img/if13.png" alt="img" />
+            <button onclick="if13()">click here..</button>
+          </div>
+        </div>
+        <!--if14-->
+        <div class="savol">
+          <h1>
+            If14. Uchta son berilgan ular orasidan avval eng kichigi va eng
+            kattasini chiqaruvchi dastur tuzilsin.
+          </h1>
+          <input type="checkbox" id="if14" />
+          <label class="if_davomi_label" for="if14">If14</label>
+          <div class="content">
+            <img src="./img/if14.png" alt="img" />
+            <button onclick="if14()">click here..</button>
+          </div>
+        </div>
+        <!--if15-->
+        <div class="savol">
+          <h1>
+            If15. Uchta son berilgan ular orasidan yig'indisi eng katta
+            bo'ladigan ikkitasini ekranga chiqaruvchi dastur tuzilsin.
+          </h1>
+          <input type="checkbox" id="if15" />
+          <label class="if_davomi_label" for="if15">If15</label>
+          <div class="content">
+            <img src="./img/if15.png" alt="img" />
+            <button onclick="if15()">click here..</button>
+          </div>
+        </div>
+        <!--if16-->
+        <div class="savol">
+          <h1>
+            If16. A,B,C sonlar berilgan.Agar sonlar o'sish tartibida bo'lsa
+            ikkilantirilsin.Aks holda ishorasi o'zgartirilsin. sonlar ekranga
+            chiqarilsin.
+          </h1>
+          <input type="checkbox" id="if16" />
+          <label class="if_davomi_label" for="if16">If16</label>
+          <div class="content">
+            <img src="./img/if16.png" alt="img" />
+            <button onclick="if16()">click here..</button>
+          </div>
+        </div>
+        <!--if17-->
+        <div class="savol">
+          <h1>
+            If17. A,B,C sonlar berilgan.Agar sonlar o'sish yoki kamayish
+            tartibida bo'lsa ikkilantirilsin.Aks holda ishorasi o'zgartirilsin.
+            sonlar ekranga chiqarilsin.
+          </h1>
+          <input type="checkbox" id="if17" />
+          <label class="if_davomi_label" for="if17">If17</label>
+          <div class="content">
+            <img src="./img/if17.png" alt="img" />
+            <button onclick="if17()">click here..</button>
+          </div>
+        </div>
+        <!--if18-->
+        <div class="savol">
+          <h1>
+            If18. uchta son berilgan shulardan ikkitasi o'zaro teng. Qolgan
+            bittasi raqami aniqlansin.
+          </h1>
+          <input type="checkbox" id="if18" />
+          <label class="if_davomi_label" for="if18">If18</label>
+          <div class="content">
+            <img src="./img/if18.png" alt="img" />
+            <button onclick="if18()">click here..</button>
+          </div>
+        </div>
+      </div>
+      <div id="endi">
+        <!--for1-->
+        <div class="savol">
+          <h1>
+            1. 1 dan n gacha barcha natural sonlarni ekranga chiqaruvchi dastur
+            tuzing.
+          </h1>
+          <input type="checkbox" id="for1" />
+          <label class="for_label" for="for1">for1</label>
+          <div class="content">
+            <img src="./img/for1.png" alt="img" />
+            <img src="./img/while1.png" alt="img" />
+            <img src="./img/whiledo1.png" alt="img" />
+            <button onclick="for1()">for..</button>
+            <button onclick="while1()">while..</button>
+            <button onclick="whiledo1()">do while..</button>
+          </div>
+        </div>
+        <!--for2-->
+        <div class="savol">
+          <h1>
+            2. 1 dan n gacha barcha natural sonlarni teskari tartibda ekranga
+            chiqaruvchi dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for2" />
+          <label class="for_label" for="for2">for2</label>
+          <div class="content">
+            <img src="./img/for2.png" alt="img" />
+            <img src="./img/while2.png" alt="img" />
+            <img src="./img/whiledo2.png" alt="img" />
+            <button onclick="for2()">for..</button>
+            <button onclick="while2()">while..</button>
+            <button onclick="whiledo2()">do while..</button>
+          </div>
+        </div>
+        <!--for3-->
+        <div class="savol">
+          <h1>
+            3. 1 dan n gacha bo'lgan barcha juft raqamlarni ekranga chiqaruvchi
+            dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for3" />
+          <label class="for_label" for="for3">for3</label>
+          <div class="content">
+            <img src="./img/for3.png" alt="img" />
+            <img src="./img/while3.png" alt="img" />
+            <img src="./img/whiledo3.png" alt="img" />
+            <button onclick="for3()">for..</button>
+            <button onclick="while3()">while..</button>
+            <button onclick="whiledo3()">do while..</button>
+          </div>
+        </div>
+        <!--for4-->
+        <div class="savol">
+          <h1>
+            4. 1 dan n gacha bo'lgan barcha toq raqamlarni ekranga chiqaruvchi
+            dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for4" />
+          <label class="for_label" for="for4">for4</label>
+          <div class="content">
+            <img src="./img/for4.png" alt="img" />
+            <img src="./img/while4.png" alt="img" />
+            <img src="./img/whiledo4.png" alt="img" />
+            <button onclick="for4()">for..</button>
+            <button onclick="while4()">while..</button>
+            <button onclick="whiledo4()">do while..</button>
+          </div>
+        </div>
+        <!--for5-->
+        <div class="savol">
+          <h1>
+            5. 1 dan n gacha bo'lgan sonlarning qarama qarshisini ekranga
+            chiqaruvchi dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for5" />
+          <label class="for_label" for="for5">for5</label>
+          <div class="content">
+            <img src="./img/for5.png" alt="img" />
+            <img src="./img/while5.png" alt="img" />
+            <img src="./img/whiledo5.png" alt="img" />
+            <button onclick="for5()">for..</button>
+            <button onclick="while5()">while..</button>
+            <button onclick="whiledo5()">do while..</button>
+          </div>
+        </div>
+        <!--for6-->
+        <div class="savol">
+          <h1>
+            6. 1 dan n gacha bo'lgan barcha natural sonlar yig'indisini topuvchi
+            dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for6" />
+          <label class="for_label" for="for6">for6</label>
+          <div class="content">
+            <img src="./img/for6.png" alt="img" />
+            <img src="./img/while6.png" alt="img" />
+            <img src="./img/whiledo6.png" alt="img" />
+            <button onclick="for6()">for..</button>
+            <button onclick="while6()">while..</button>
+            <button onclick="whiledo6()">do while..</button>
+          </div>
+        </div>
+        <!--for7-->
+        <div class="savol">
+          <h1>
+            7. 1 dan n gacha bo'lgan barcha juft sonlar yig'indisini topuvchi
+            dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for7" />
+          <label class="for_label" for="for7">for7</label>
+          <div class="content">
+            <img src="./img/for7.png" alt="img" />
+            <img src="./img/while7.png" alt="img" />
+            <img src="./img/whiledo7.png" alt="img" />
+            <button onclick="for7()">for..</button>
+            <button onclick="while7()">while..</button>
+            <button onclick="whiledo7()">do while..</button>
+          </div>
+        </div>
+        <!--for8-->
+        <div class="savol">
+          <h1>
+            8. 1 dan n gacha bo'lgan barcha toq sonlar yig'indisini topuvchi
+            dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for8" />
+          <label class="for_label" for="for8">for8</label>
+          <div class="content">
+            <img src="./img/for8.png" alt="img" />
+            <img src="./img/while8.png" alt="img" />
+            <img src="./img/whiledo8.png" alt="img" />
+            <button onclick="for8()">for..</button>
+            <button onclick="while8()">while..</button>
+            <button onclick="whiledo8()">do while..</button>
+          </div>
+        </div>
+        <!--for9-->
+        <div class="savol">
+          <h1>
+            9. 1 dan n gacha bo'lgan sonlarning ko'paytmasini ekranga
+            chiqaruvchi dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for9" />
+          <label class="for_label" for="for9">for9</label>
+          <div class="content">
+            <img src="./img/for9.png" alt="img" />
+            <img src="./img/while9.png" alt="img" />
+            <img src="./img/whiledo9.png" alt="img" />
+            <button onclick="for9()">for..</button>
+            <button onclick="while9()">while..</button>
+            <button onclick="whiledo9()">do while..</button>
+          </div>
+        </div>
+        <!--for10-->
+        <div class="savol">
+          <h1>
+            10. 1 dan n gacha bo'lgan barcha natural sonlar kvadratini topuvchi
+            dastur tuzing.
+          </h1>
+          <input type="checkbox" id="for10" />
+          <label class="for_label" for="for10">for10</label>
+          <div class="content">
+            <img src="./img/for10.png" alt="img" />
+            <img src="./img/while10.png" alt="img" />
+            <img src="./img/whiledo10.png" alt="img" />
+            <button onclick="for10()">for..</button>
+            <button onclick="while10()">while..</button>
+            <button onclick="whiledo10()">do while..</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

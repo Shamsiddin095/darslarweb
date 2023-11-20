@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.sidebar {
+  align-items: center;
+  padding-top: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  left: -280px;
+  width: 300px;
+  height: 200vh;
+  position: fixed;
+  border-right: 20px solid rgb(6, 145, 99);
+}
+.sidebar:hover {
+  left: 0;
+  transition: all 1.5s ease;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+}
+.sidebar button {
+  background: rgb(103, 101, 101);
+  color: white;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.sidebar button:hover {
+  background: rgb(6, 145, 99);
+}
+.savol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding: 20px 20px;
+}
+.savol h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.savol p {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  color: grey;
+}
+.savol img {
+  width: 50%;
+  padding: 30px;
+  margin: auto;
+}
+.savol ul li {
+  font-size: 20px;
+  color: grey;
+}
+.savol h2 {
+  text-align: center;
+  padding: 10px;
+}
+.tips h2 {
+  text-align: center;
+}
+.tips ol {
+  padding: 50px;
+}
+.tips ol li {
+  font-size: 20px;
+  color: gray;
+}
+input {
+  display: none;
+}
+label {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: rgb(0, 128, 117);
+  width: 150px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+label:hover {
+  background: rgb(10, 130, 154);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  max-width: 100%;
+}
+.content img {
+  max-width: 100%;
+}
+.content button {
+  background: rgb(39, 139, 121);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.content button:hover {
+  background: rgb(75, 145, 169);
+}
+input:checked ~ label ~ .content {
+  display: flex;
+}
+#datatypes {
+  display: none;
+}
+
+#operatorlar {
+  border-top: 10px solid rgb(68, 81, 86);
+  display: none;
+}
+#loops {
+  border-top: 10px solid rgb(68, 81, 86);
+  display: block;
+}
+#functions {
+  border-top: 10px solid rgb(68, 81, 86);
+  display: none;
+}
+#objects {
+  border-top: 10px solid rgb(68, 81, 86);
+  display: none;
+}
+#endi {
+  border-top: 10px solid rgb(68, 81, 86);
+  display: none;
+}
+.if_label {
+  background: red;
+}
+.begin_label {
+  background: rgb(34, 125, 31);
+}
+.case_label {
+  background: rgb(198, 127, 35);
+}
+.if_davomi_label {
+  background: rgb(169, 40, 94);
+}
+.for_label {
+  background: rgb(13, 150, 93);
+}
+
+@media screen and (max-width: 475px) {
+  label {
+    background: rgb(48, 176, 9);
+    width: 90%;
+  }
+  .savol img {
+    width: 100%;
+  }
+  .savol p {
+    font-size: 18px;
+  }
+  .savol h1 {
+    font-size: 24px;
+  }
+}
