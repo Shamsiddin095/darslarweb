@@ -33,8 +33,8 @@ function objects() {
       ? "block"
       : "none";
 }
-function endi() {
-  var paragraph = document.getElementById("endi");
+function Arraylar() {
+  var paragraph = document.getElementById("Array");
   paragraph.style.display =
     paragraph.style.display === "none" || paragraph.style.display === ""
       ? "block"
@@ -118,21 +118,27 @@ function oper1() {
 // while for do while
 
 function for1() {
-  let n = 10;
-  let natija = "";
-  for (var i = 1; i <= n; i++) {
-    natija += i + " ";
-  }
+  let tanlov = confirm("Siz mevani yoqtirasizmi?");
 
-  alert(natija);
-}
-function func1() {
-  function keyingison(num) {
-    return num + 1;
+  if (tanlov) {
+    let mevalar = [];
+    let soni = +prompt("mevalar soni ");
+    for (let i = 1; i <= soni; i++) {
+      let meva = prompt(i + " - yoqtirgan mevangizni kiriting");
+
+      if (meva) {
+        mevalar.push(meva);
+      }
+    }
+
+    if (mevalar.length > 0) {
+      alert("Sizning yoqtirgan mevalaringiz: " + mevalar.join(", "));
+    } else {
+      alert("Meva kiritmadiz");
+    }
+  } else {
+    alert("Meva ham yeb tur faqat fast food yeyavermasdan");
   }
-  const num = +prompt("son kiriting:");
-  const natija = keyingison(num);
-  alert("naitja: " + natija);
 }
 
 function func2() {

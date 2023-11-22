@@ -155,15 +155,15 @@ input:checked ~ label ~ .content {
 }
 #functions {
   border-top: 10px solid rgb(68, 81, 86);
-  display: block;
+  display: none;
 }
 #objects {
   border-top: 10px solid rgb(68, 81, 86);
   display: none;
 }
-#endi {
+#Array {
   border-top: 10px solid rgb(68, 81, 86);
-  display: none;
+  display: block;
 }
 .if_label {
   background: red;
