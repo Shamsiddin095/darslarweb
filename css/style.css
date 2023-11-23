@@ -144,6 +144,9 @@ input:checked ~ label ~ .content {
 #datatypes {
   display: none;
 }
+#tenx_funksiya-qoida {
+  color: black;
+}
 
 #operatorlar {
   border-top: 10px solid rgb(68, 81, 86);
@@ -155,7 +158,7 @@ input:checked ~ label ~ .content {
 }
 #functions {
   border-top: 10px solid rgb(68, 81, 86);
-  display: none;
+  display: block;
 }
 #objects {
   border-top: 10px solid rgb(68, 81, 86);
@@ -163,7 +166,7 @@ input:checked ~ label ~ .content {
 }
 #Array {
   border-top: 10px solid rgb(68, 81, 86);
-  display: block;
+  display: none;
 }
 .if_label {
   background: red;
