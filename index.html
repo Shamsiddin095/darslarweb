@@ -145,8 +145,8 @@
 
             "!" - mantiqiy "emas"﻿
           </p>
-          <input type="checkbox" id="oper1" />
-          <label class="begin_label" for="oper1">Bosing</label>
+          <input type="checkbox" id="task3" />
+          <label class="begin_label" for="task3">Bosing</label>
           <div class="content">
             <img src="./img/oper_img3.png" alt="img" />
             <button onclick="oper1()">click here..</button>
@@ -194,8 +194,8 @@
             davom etadi. Sikl sharti false bo'lgan sikl tugatiladi. Misol: 1 dan
             10 gacha bo'lgan sonlarni ekranda chiqarish
           </p>
-          <input type="checkbox" id="for1" />
-          <label class="if_label" for="for1">Bosing</label>
+          <input type="checkbox" id="task4" />
+          <label class="if_label" for="task4">Bosing</label>
           <div class="content">
             <img src="./img/loop_img2.png" alt="img" />
             <button onclick="for1()">click here..</button>
@@ -211,124 +211,152 @@
         </div>
         <hr />
       </div>
+
       <div id="functions">
         <!--functions-->
         <div class="savol">
-          <h1>JavaScript Funksiya</h1>
-          <p id="tenx_funksiya-qoida">
-            <b
-              >Tenx qoida funcsiyalar <br />Funksiyalar 2 turga bo'linadi <br />
-              1. return bor <br />2 return yuq <br />
-              return bor funksiyalarga qiymat qaytaradigan funksiyalar <br />
-              reeturn yuq funksiyalar qiymat qaytarmaydigna funksiyalar deb
-              ataladi (void)</b
-            >
-          </p>
-          <p>
-            JavaScript dasturlash tilida ham boshqa dasturlash tillari singari
-            funksiya mavjud va vazifalari ham o'xshash hisoblanadi. Funksiya
-            uchun qisqacha tarif quyidagicha keltirsak bo'ladi.
-          </p>
-          <span
-            >Funksiya - ma'lum bir vazifa bajarishga mujjallangan bo'lib dastur
-            kodining bir qismi hisoblanib uni qayta-qayta foydalanish imkoniyati
-            bo'lib kod bo'lagidir.</span
-          >
-          <h2>JavaScript Funksiya sintaksisi</h2>
-          <p>
-            Funksiya funksiya nomi va () qavs ichida parametrlar qabul qiladi.
-            Funksiya nomi harflar, sonlar, pastgi chiziq va dollor belgilari
-            bo'lishi mumkin. har bir parametr "," vergul bilan ajratilib
-            ko'rsatiladi. Funksiya tanasi figuraviy qavs ichida yoziladi.
-          </p>
-          <img src="./img/func_img1.png" alt="img" />
-          <h2>Funktsiyani chaqirish</h2>
-          <p>
-            Funksiya <b>return</b> belgisigacha ishlaydi yoki funksiya tanasi
-            oxirigacha bajariladi. Qiymat qaytarish uchun <b>return</b> kalit
-            so'zidan foydalaniladi.
-          </p>
-          <h2>Nima uchun funksiyalar?</h2>
-          <p>
-            Siz yaratgan funksiyadan qayta foydalanish va JavaScript kodining
-            tarkibidagi istalgan joyda o'zingiz yaratgan funksiyaga murojaat
-            qilishingiz mumkin. Bir marta yarating ko'p marta foydalaning.
-          </p>
-          <h1>Function ga oid bir nechta masalar ishlab ko'ramiz</h1>
-          <p>
-            1. Berilgan sondan keyingi sonni qaytaruvchi funksiya
-            yozing.(pastdagi tugmaga bosing va javobni tekshiring)
-          </p>
+          <h1>Funksiyalar</h1>
 
-          <input type="checkbox" id="func1" />
-          <label class="case_label" for="func1">masala_1</label>
-          <div class="content">
-            <img src="./img/funk_img2.png" alt="img" />
-            <button onclick="func1()">click here..</button>
-          </div>
+          <img src="./img/funksiya_img1.png" alt="img" />
+          <img src="./img/funksiya_img2.png" alt="img" />
+        </div>
+        <hr />
+        <!--1-topshiriq-->
+        <div class="savol">
+          <h1>Darsga oid topshiriqlar</h1>
+          <div class="topshiriq">
+            <p>
+              1. Berilgan sondan keyingi sonni qaytaruvchi funksiya
+              yozing.(pastdagi tugmaga bosing va javobni tekshiring)
+            </p>
 
-          <p>2. Berilgan 2 ta son yig'indisini qaytaruvchi funksiya tuzing</p>
-
-          <input type="checkbox" id="func2" />
-          <label class="case_label" for="func2">masala_2</label>
-          <div class="content">
-            <img src="./img/funk_img3.png" alt="img" />
-            <button onclick="func2()">click here..</button>
-          </div>
-          <p>3. Berilgan soatni sekundga aylantiruvchi funksiya tuzing</p>
-
-          <input type="checkbox" id="func3" />
-          <label class="case_label" for="func3">masala_3</label>
-          <div class="content">
-            <img src="./img/funk_img4.png" alt="img" />
-            <button onclick="func3()">click here..</button>
-          </div>
-          <p>
-            4.Kvadrat tomoni berilgan perimetri va yuzini topuvchi funksiya
-            tuzing
-          </p>
-
-          <input type="checkbox" id="func4" />
-          <label class="case_label" for="func4">masala_4</label>
-          <div class="content">
-            <img src="./img/funk_img5.png" alt="img" />
-            <button onclick="func4()">click here..</button>
-          </div>
-          <p>
-            5.Berilgan sonni toq yoki juft ekanini aniqlovchi funksiya tuzing
-          </p>
-
-          <input type="checkbox" id="func5" />
-          <label class="case_label" for="func5">masala_5</label>
-          <div class="content">
-            <img src="./img/funk_img6.png" alt="img" />
-            <button onclick="func5()">click here..</button>
-          </div>
-          <p>
-            6.Berilgan sonni musbat yoki manfiyligini aniqlovchi funksiya tuzing
-          </p>
-
-          <input type="checkbox" id="func6" />
-          <label class="case_label" for="func6">masala_6</label>
-          <div class="content">
-            <img src="./img/funk_img7.png" alt="img" />
-            <button onclick="func6()">click here..</button>
-          </div>
-          <p>
-            7.Yosh kiritilganda odam necha kun va necha soat yashaganini
-            hisoblovchi dastur tuzing.
-          </p>
-
-          <input type="checkbox" id="func7" />
-          <label class="case_label" for="func7">masala_7</label>
-          <div class="content">
-            <img src="./img/funk_img8.png" alt="img" />
-            <button onclick="func7()">click here..</button>
+            <input type="checkbox" id="fun1" />
+            <label for="fun1">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img2.png" alt="img" />
+              <button onclick="func1()">click here..</button>
+            </div>
           </div>
         </div>
+        <!--2-topshiriq-->
+        <div class="savol">
+          <div class="topshiriq">
+            <p>2. Berilgan 2 ta son yig'indisini qaytaruvchi funksiya tuzing</p>
 
-        <!--if davomi -->
+            <input type="checkbox" id="fun2" />
+            <label for="fun2">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img3.png" alt="img" />
+              <button onclick="func2()">click here..</button>
+            </div>
+          </div>
+        </div>
+        <!--3-topshiriq-->
+        <div class="savol">
+          <div class="topshiriq">
+            <p>3. Berilgan soatni sekundga aylantiruvchi funksiya tuzing</p>
+
+            <input type="checkbox" id="fun3" />
+            <label for="fun3">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img4.png" alt="img" />
+              <button onclick="func3()">click here..</button>
+            </div>
+          </div>
+        </div>
+        <!--4-topshiriq-->
+        <div class="savol">
+          <div class="topshiriq">
+            <p>
+              4.Kvadrat tomoni berilgan perimetri va yuzini topuvchi funksiya
+              tuzing
+            </p>
+
+            <input type="checkbox" id="fun4" />
+            <label for="fun4">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img5.png" alt="img" />
+              <button onclick="func4()">click here..</button>
+            </div>
+          </div>
+        </div>
+        <!--5-topshiriq-->
+        <div class="savol">
+          <div class="topshiriq">
+            <p>
+              5.Berilgan sonni toq yoki juft ekanini aniqlovchi funksiya tuzing
+            </p>
+
+            <input type="checkbox" id="fun5" />
+            <label for="fun5">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img6.png" alt="img" />
+              <button onclick="func5()">click here..</button>
+            </div>
+          </div>
+        </div>
+        <!--6-topshiriq-->
+        <div class="savol">
+          <div class="topshiriq">
+            <p>
+              6.Berilgan sonni musbat yoki manfiyligini aniqlovchi funksiya
+              tuzing
+            </p>
+
+            <input type="checkbox" id="fun6" />
+            <label for="fun6">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img7.png" alt="img" />
+              <button onclick="func6()">click here..</button>
+            </div>
+          </div>
+        </div>
+        <!--7-topshiriq-->
+        <div class="savol">
+          <div class="topshiriq">
+            <p>
+              7.Yosh kiritilganda odam necha kun va necha soat yashaganini
+              hisoblovchi dastur tuzing.
+            </p>
+
+            <input type="checkbox" id="fun7" />
+            <label for="fun7">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img8.png" alt="img" />
+              <button onclick="func7()">click here..</button>
+            </div>
+          </div>
+        </div>
+        <!--Film topshiriq-->
+        <div class="savol">
+          <div class="topshiriq">
+            <h1>Films task</h1>
+            <p>
+              1 Foydalanuvchidan filmni yoqtirishi so'raydi <br />
+              2. Agar xa deb javob bersa davom etilsin va yoqtirgan janrlar
+              so'raydi <br />
+              3 Va yoqtirgan filmlar soni so'raydi
+              <br />
+              4. Agar filmlar soni 4 tadan ko'p bo'lsa alertga yozishga
+              erinmaysizmi deb so'raydi <br />
+              5 Keyin janr bo'yicha yoqtirgan filmlar kiritish so'raydi <br />
+              6. Agar filmar bo'sh qoldirilsa siz hech nima kiritmadiz iltimos
+              qaytadan urinib ko'ring deyiladi <br />
+              6. Barcha shart bajarilsa Oxirida janr bo'yicha yoqtirgan filmlar
+              chiqariladi
+            </p>
+
+            <input type="checkbox" id="fun8" />
+            <label for="fun8">Bosing</label>
+            <div class="content">
+              <img src="./img/funk_img9.png" alt="img" />
+              <button onclick="func8()">click here..</button>
+            </div>
+          </div>
+        </div>
+        <!--close div-->
       </div>
+
       <div id="objects">
         <!--if10-->
         <div class="savol">
@@ -346,203 +374,31 @@
         </div>
       </div>
       <div id="Array">
-        <!--for1-->
+        <!--Array push-->
         <div class="savol">
-          <h1>Array</h1>
-          <p>
-            Avvalo, takrorlab olamiz, Array bu birnechta harxil qiymatlardan
-            tashkil topgan ma’lum bir ketma ketlikda joylashgan obyekt. Misol
-            uchun, [1, 2, «Josh», true] kabi. Demak darsimizni o’zimiz uchun
-            bitta array yaratib olishdan boshlaymiz. <br />
-            Endi bugungi darsda o’rganadigan metodlar bilan qisqacha tanishib
-            o’tamiz.
-          </p>
-          <ol>
-            <li>Push (...items)</li>
-            <li>Pop ()</li>
-            <li>shift()</li>
-            <li>unshift(...items)</li>
-            <li>slice(start,end)</li>
-          </ol>
-          <h2>Push (...items)</h2>
-          <p>
-            Demak, bizda arr o’zgaruvchisi bor va u [1,2,3,4] qiymatini o’zida
-            saqlayapti. Agar biz bu arrayga 5 ni qo’shmoqchi bo’lsak nima
-            qilamiz ?
-          </p>
-          <span>arr.push(5) // [1,2,3,4,5]</span>
-          <h2>pop()</h2>
-          <p>
-            Endi agar biz arrayning oxiridan bir qiymatni olib tashlamoqchi
-            bo’lsak qanday yo’l tutamiz ?
-          </p>
-          <span
-            >arr = [1,2,3,4]; <br />
-            arr.pop(); // bu holatda arraydan 4 qiymati olib tashlandi. <br />
-            arr esa [1,2,3] ga teng.</span
-          >
-          <h2>3.shift()</h2>
-          <p>
-            Xo’sh, demak biz arrayni oxiridan qiymat olishni o’rgandik, agar
-            arrayning boshidan olishimizga to’gri kelsa qanday yo’l tutamiz ?
-            🤨🤔
-          </p>
-          <span
-            >arr = [1,2,3,4]; <br />
-            arr.shift(); <br />
-            // arr qiymati endi [2,3,4]</span
-          >
-          <h2>4.unshift()</h2>
-          <p>
-            Ha, Arrayning boshiga qiymat qo’shish. Biz oxiriga qo’shishni
-            ko’rdik. Ammo boshigachi ?
-          </p>
-          <span
-            >arr = [3,4,5]; <br />
-            arr.unshift(1,2) <br />
-            // arr ning qiymati endi [1,2,3,4,5] ga teng
-          </span>
-          <h2>5.slice(start, end)</h2>
-          <p>
-            Tasavvur qiling, Bizda [1,2,3,4,5,6,7] qiymatlarini o’zida
-            saqlayotgan bir array bor. Bizga berilgan vazifa shuki, boshqa array
-            yaratib, bu birinchi arraydan faqatgina [3,4,5] qiymatlarini olib
-            yangisiga berish. Ya’ni birinchi array ga tegmagan holda, uni
-            ichidagi ayrim qiymatlarni olib boshqa arrayga joylashtirish. Nima
-            qilamiz ? 🤨
-          </p>
-          <span
-            >let first = [1,2,3,4,5,6,7]; <br />
-            let second = first.slice(2,5) <br />
-            // second = [3,4,5];</span
-          >
-          <p>
-            Bu yerda slice() metodi birinchi arrayda 2 dan 5 chi indeksgacha
-            bo’lgan barcha qiymatlarni ikkinchi arrayga ko’chirib olib beradi.
-            Birinchi array ga ta’sir ko’rsatmagan holda. Agar biz , 2-indeksdan
-            boshlab qolgan barcha qiymatni olmoqchi bo’lsakchi ? Ya’ni,
-            [3,4,5,6,7] qiymatini. Bu vaziyatda slice metodiga shunchaki
-            ikkinchi argumentni bermaymiz xolos. Ya’ni qayergachaligini
-            aytmaymiz. Metod esa barchasini bizga olib beradi.
-          </p>
-          <h1>2-QISM</h1>
-          <ol>
-            <li>splice()</li>
-            <li>concat()</li>
-            <li>forEach()</li>
-            <li>indexOf()/lastIndexOf()</li>
-            <li>includes()</li>
-          </ol>
-          <p>Demak, splice() metodidan boshlaymiz.</p>
-          <h2>Bu metod vazifalari:</h2>
-          <p>
-            1.Arraydan biz xohlagancha miqdorda element(lar)ni o’chirib
-            tashlaydi. <br />
-            2.O’chirilgan element(lar)ni o’rniga yangi elementlarni qo’shadi.
-          </p>
-          <h2>Argumentlari:</h2>
-          <p>
-            1.start – bu qaysi indeksdan boshlab elementlarni o’chirishni
-            belgilaydi. Misol uchun,birinchi argumentga 2 sonini bersak , metod
-            arrayning ikkinchi indeksidan boshlab elementlarni o’chirishni
-            boshlaydi. <br />
-            2.deleteCount – berilgan startdan ya’ni indeksdan boshlab nechta
-            element o’chirish kerakligini aniqlaydi. Misol uchun, splice(2,2)
-            deb yozsak, ikkinchi indeksdan boshlab 2 ta elementni o’chirish
-            kerak degani. <br />
-            3.…elementsToReplace – bu argument ixtiyoriy, agar biz o’chirgan
-            elementlar o’rniga yangi elementlarni joylashtirmoqchi bo’lsak
-            ishlatamiz. <br />
-            Endi misollarga o’tamiz:
-          </p>
-          <span
-            >let arr = [1,2,3,4,5,6]; <br />
-            arr.splice(2,2) // <br />
-            arr = [1,2,5,6];</span
-          >
-          <p>Bu yerda arraydan [3,4] ni o’chirib tashladik.</p>
-          <span
-            >let arr = [1,2,3,4,5,6]; <br />
-            arr.splice(2,1, «uch») <br />
-            // arr = [1, 2, «uch», 4, 5, 6]
-          </span>
-          <p>
-            bu yerda esa ikkinchi indeksda turgan 3 sonini o’chirib o’rniga
-            «uch» ni yozdik. Harxil holatlar bilan o’zingiz sinab ko’rishingiz
-            mumkin. Biz esa keyingi metodga o’tamiz. 😉
-          </p>
-          <h2>concat(…items)</h2>
-          <p>
-            Biror bir arrayga boshqa arrayni qo’shib yangi array yaratmoqchi
-            bo’lsangiz concat() metodini ishlatsangiz bo’ladi. Misol uchun:
-          </p>
-          <span
-            >let arr = [1,2,3]; <br />
-            let arr2 = [4,5,6]; <b></b> let newArr = arr.concat(arr2); <br />
-            newArr = [1,2,3,4,5,6]</span
-          >
-          <h2>forEach(item, index, array)</h2>
-          <p>
-            <b>Looplar </b> haqida ma’lumotingiz bo’lsa, arraylarni sikl bo’ylab
-            yurishimiz uchun tahminan quyidagicha koddan foydalanar edik:
-          </p>
-          <span
-            >for(let i = 0; i <= arr.length; i++){ console.log(arr[i]) }</span
-          >
-          <p>
-            yoki, for ..of , for..in lar ham misol bo’ladi. <br />
-            Ammo, Arraylar ustida osonroq ishlashimiz uchun forEach() metodi ham
-            borligini bilarmidingiz.
-          </p>
-          <span
-            >let arr = [1,2,3]; <br />
-            arr.forEach((item, index, array) => { <br />
-            console.log(«item: » + item); // item: 1, item: 2 , item: 3 <br />
-            console.log(«index: » + index); // index: 0, index: 1, index: 2
-            <br />
-            console.log(«array: » + array); // array: [1,2,3], … })</span
-          >
-          <h2>indexOf(item)/lastIndexOf(item)</h2>
-          <p>
-            Agar array ichidagi biror bir qiymatni indeksini bilishimiz kerak
-            bo’lib qolsa , indexOf() metodidan foydalanamiz. Misol:
-          </p>
-          <span
-            >let arr = [5, 8, 3, 6, 3]; <br />
-            arr.indexOf(3); // 2
-          </span>
-          <p>let arr = [5, 8, 3, 6, 3]; arr.indexOf(3); // 2</p>
-          <h2>arr.lastIndexOf(3) // 4</h2>
-          <p>
-            lastIndexOf() esa ushbu berilgan qiymatning oxirgi joylashgan
-            indeksini qaytaradi.
-          </p>
-          <h2>includes(item)</h2>
-          <p>
-            Agar biror bir qiymat ushbu arrayda bor yoki yo’qligini bilmoqchi
-            bo’lsak includes() metodidan foydalanamiz. Misol:
-          </p>
-          <span
-            >let arr = [5, 8, 3, 6, 3]; <br />arr.includes(5) // true
-            <br />arr.includes(12) // false</span
-          >
-          <h1>Topshiriq</h1>
-          <p>
-            // yoqtirgan mevangiz bormi ? // agar ha bo'lsa tanlovi // nechta
-            yoqtirgan mevangiz bor ? // 3 (ta) // 1 - yoqtirgan mevangizni
-            kiriting // kiwi // 2 - yoqtirgan mevangizni kiriting // banan // 3
-            - yoqtirgan mevangizni kiriting // nok // sizning yotirgan
-            mevalaringiz: kiwi, banan, nok // agar yo'q bo'lsa tanlovi // meva
-            ham yeb tur fast food yeyavermasdan
-          </p>
-          <h1>uyga vazifa filmlar 0</h1>
-          <p>
-            1 siz filmlarga qiziqasizmi ? <br />
-            agar qiziqsa xa bo'lsa <br />
-            2 Yoqtirgan janringizni tanlang ? <br />
-            3 Tanlangan janr bo'yicha nechta kinosini yoqtirasiz? <br />
-            4.nomlarini kiriting
-          </p>
+          <h1>Java script Array</h1>
+          <img src="./img/Array_img1.png" alt="img" />
+          <input type="checkbox" id="arr1" />
+          <label class="array_label" for="arr1">push example</label>
+          <div class="content">
+            <img src="./img/push.png" alt="img" />
+            <button onclick="array1()">Click here ...</button>
+          </div>
+        </div>
+        <!--Array2-->
+        <div class="savol">
+          <h1>2 Pop()</h1>
+
+          <img src="./img/pop.png " alt="img" />
+          <input type="checkbox" id="arr2" />
+          <label class="array_label" for="arr2">pop example</label>
+          <div class="content">
+            <img src="./img/pop_img.png" alt="img" />
+            <button onclick="array2()">Click here ...</button>
+          </div>
+        </div>
+        <!--Array-->
+        <div class="savol">
           <input type="checkbox" id="arr1" />
           <label class="for_label" for="arr1">Uyga vazifa</label>
           <div class="content">
@@ -550,6 +406,7 @@
             <button onclick="for1()">Natija</button>
           </div>
         </div>
+        <!--close-->
       </div>
     </main>
     <script src="./JS/script.js"></script>

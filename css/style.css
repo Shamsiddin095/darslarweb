@@ -68,7 +68,7 @@ main {
   color: grey;
 }
 .savol img {
-  width: 50%;
+  width: 70%;
   padding: 30px;
   margin: auto;
 }
@@ -128,12 +128,23 @@ label:hover {
   width: 100%;
 }
 .content button {
-  background: rgb(39, 139, 121);
+  background: rgb(9, 144, 45);
   color: white;
-  padding: 10px 30px;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.topshiriq {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 20px;
+}
+.topshiriq p {
+  text-align: left;
 }
 .content button:hover {
   background: rgb(75, 145, 169);
@@ -143,9 +154,6 @@ input:checked ~ label ~ .content {
 }
 #datatypes {
   display: none;
-}
-#tenx_funksiya-qoida {
-  color: black;
 }
 
 #operatorlar {
@@ -168,7 +176,7 @@ input:checked ~ label ~ .content {
   border-top: 10px solid rgb(68, 81, 86);
   display: none;
 }
-.if_label {
+/* .if_label {
   background: red;
 }
 .begin_label {
@@ -180,14 +188,17 @@ input:checked ~ label ~ .content {
 .if_davomi_label {
   background: rgb(169, 40, 94);
 }
-.for_label {
-  background: rgb(13, 150, 93);
+.array_label {
+  width: 30%;
+  background: rgb(158, 96, 60);
 }
-
+.array_label:hover {
+  background: rgb(134, 77, 77);
+} */
 @media screen and (max-width: 475px) {
   label {
-    background: rgb(48, 176, 9);
-    width: 90%;
+    background: rgb(102, 178, 211);
+    width: 70%;
   }
   .savol img {
     width: 100%;
@@ -197,5 +208,18 @@ input:checked ~ label ~ .content {
   }
   .savol h1 {
     font-size: 24px;
+  }
+  .topshiriq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .topshiriq button {
+    width: 50%;
+    background: rgb(196, 39, 57);
   }
 }
