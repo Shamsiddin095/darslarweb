@@ -239,66 +239,78 @@ function func8() {
     let janr = prompt(
       "Qaysi film janrini yoqtirishingizni tanlang:\n1 - Horror\n2 - Comedy\n3 - Action\n4 - Romantic"
     );
-    let filmSoni = +prompt("Yoqtirgan filmingiz soni :");
-    if (filmSoni === Number || filmSoni > 4) {
-      alert("Bu kup miqdor yozishga erinmaysizmi?");
+    if (janr < 0 || isNaN(janr) == true) {
+      alert("siz noturi ma'lumot kiritdiz");
     } else {
-      switch (janr) {
-        case "1":
-          for (let i = 0; i < filmSoni; i++) {
-            let filmNomi = prompt(
-              `Horror janri uchun yoqtirgan filmni kiriting:`
-            );
-            if (filmNomi !== "") {
-              filmlar.push(filmNomi);
-            } else {
-              alert("siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring");
+      let filmSoni = +prompt("Yoqtirgan filmingiz soni :");
+      if (filmSoni === Number || filmSoni > 4) {
+        alert("Bu kup miqdor yozishga erinmaysizmi?");
+      } else {
+        switch (janr) {
+          case "1":
+            for (let i = 1; i <= filmSoni; i++) {
+              let filmNomi = prompt(
+                `${i}-Horror janri uchun yoqtirgan filmni kiriting:`
+              );
+              if (filmNomi !== "") {
+                filmlar.push(filmNomi);
+              } else {
+                alert(
+                  "siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring"
+                );
+              }
             }
-          }
-          break;
-        case "2":
-          for (let i = 0; i < filmSoni; i++) {
-            let filmNomi = prompt(
-              "Comedy janri uchun yoqtirgan filmni kiriting:"
-            );
-            if (filmNomi !== "") {
-              filmlar.push(filmNomi);
-            } else {
-              alert("siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring");
+            break;
+          case "2":
+            for (let i = 1; i <= filmSoni; i++) {
+              let filmNomi = prompt(
+                `${i}-Comedy janri uchun yoqtirgan filmni kiriting:`
+              );
+              if (filmNomi !== "") {
+                filmlar.push(filmNomi);
+              } else {
+                alert(
+                  "siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring"
+                );
+              }
             }
-          }
-          break;
-        case "3":
-          for (let i = 0; i < filmSoni; i++) {
-            let filmNomi = prompt(
-              "Action janri uchun yoqtirgan filmni kiriting:"
-            );
-            if (filmNomi !== "") {
-              filmlar.push(filmNomi);
-            } else {
-              alert("siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring");
+            break;
+          case "3":
+            for (let i = 1; i <= filmSoni; i++) {
+              let filmNomi = prompt(
+                `${i}-Action janri uchun yoqtirgan filmni kiriting:`
+              );
+              if (filmNomi !== "") {
+                filmlar.push(filmNomi);
+              } else {
+                alert(
+                  "siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring"
+                );
+              }
             }
-          }
-          break;
-        case "4":
-          for (let i = 0; i < filmSoni; i++) {
-            let filmNomi = prompt(
-              "Romantic janri uchun yoqtirgan filmni kiriting:"
-            );
-            if (filmNomi !== "") {
-              filmlar.push(filmNomi);
-            } else {
-              alert("siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring");
+            break;
+          case "4":
+            for (let i = 1; i <= filmSoni; i++) {
+              let filmNomi = prompt(
+                `${i}- Romantic janri uchun yoqtirgan filmni kiriting:`
+              );
+              if (filmNomi !== "") {
+                filmlar.push(filmNomi);
+              } else {
+                alert(
+                  "siz hech nima kiritmadiz iltimos qaytadan urinib ko'ring"
+                );
+              }
             }
-          }
-          break;
+            break;
 
-        default:
-          alert(" Iltimos, 1 dan 4 gacha raqam kiriting.");
-      }
+          default:
+            alert(" Iltimos, 1 dan 4 gacha raqam kiriting.");
+        }
 
-      if (filmlar.length > 0) {
-        alert("Janr bo'yicha yoqtirgan filmlaringiz:\n" + filmlar.join(","));
+        if (filmlar.length > 0) {
+          alert("Janr bo'yicha yoqtirgan filmlaringiz:\n" + filmlar.join(","));
+        }
       }
     }
   }
