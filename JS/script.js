@@ -5,6 +5,7 @@ function datatypes() {
       ? "block"
       : "none";
 }
+
 function operatorlar() {
   var paragraph = document.getElementById("operatorlar");
   paragraph.style.display =
@@ -156,80 +157,255 @@ function array2() {
   alert(" arr.pop() bunda oxiridan bitta  olib tashlandi  ");
   alert("natija " + arr);
 }
-function func1() {
-  function keyingison(num) {
+function funcdec1() {
+  function findNextNumber(num) {
     return num + 1;
   }
-  const num = +prompt("son kiriting");
-  const natija = keyingison(num);
-  alert("Kiyingi son: " + natija);
-}
-function func2() {
-  function yigindi(num1, num2) {
-    return num1 + num2;
+
+  const num = +prompt("Inter number");
+
+  if (num < 0 || isNaN(num) == true) {
+    alert("Try again");
+  } else {
+    // const result = findNextNumber(num);
+    // alert("Next number: " + result);
+    conlos.lo(findNextNumber(num));
   }
-  const num1 = +prompt("1-son :");
-  const num2 = +prompt("1-son :");
-  const natija = yigindi(num1, num2);
-  alert("naitja: " + natija);
-}
-function func3() {
-  function sekund(soat) {
-    return soat * 3600;
-  }
-  const soat = +prompt("soatni kiriting :");
-  const natija = sekund(soat);
-  alert("naitja: " + natija + " sekund");
-}
-function func4() {
-  function kvadrat_per_yuzi(tomoni) {
-    return tomoni;
-  }
-  const tomoni = +prompt("kvadrat tomonini qiymati :");
-  const natija = kvadrat_per_yuzi(tomoni);
-  per = natija * 4;
-  yuzi = natija * natija;
-  alert("Kvadrat peremetri = : " + per + "\n kvadrat yuzi = " + yuzi);
-}
-function func5() {
-  function juftyokitoq(son) {
-    if (son % 2 === 0) {
-      return "juft";
-    } else {
-      return " toq";
-    }
-  }
-  const son = +prompt("son kiriting:");
-  const natija = juftyokitoq(son);
-  alert(son + " soni " + natija);
 }
 
-function func6() {
-  function musbatyokimanfiy(son) {
-    if (son > 0) {
-      return "musbat";
+function funcexp1() {
+  let findNextNumber = function (num) {
+    return num + 1;
+  };
+  let num = +prompt("Inter your number");
+  let result = findNextNumber(num);
+  alert("Next number : " + result);
+  console.log("next number" + result);
+}
+
+function funcarr1() {
+  const findNextNumber = (num) => num + 1;
+  // the result get
+  let num = +prompt("Inter your number:");
+  const result = findNextNumber(num);
+  console.log(result); //
+  alert("Next number: " + result);
+}
+
+function funcdec2() {
+  function total(num1, num2) {
+    return num1 + num2;
+  }
+  const num1 = +prompt("1 _first number :");
+  const num2 = +prompt("1-Second number :");
+  const natija = total(num1, num2);
+  alert("naitja: " + natija);
+}
+
+function funcexp2() {
+  let total = function (num1, num2) {
+    return num1 + num2;
+  };
+  let num1 = +prompt("1-first number");
+  let num2 = +prompt("2-second number");
+  let result = total(num1, num2);
+  alert(`Total number : ${result}`);
+  console.log("total number" + result);
+}
+
+function funcarr2() {
+  const total = (num1, num2) => num1 + num2;
+  // the result get
+  let num1 = +prompt("1-first number");
+  let num2 = +prompt("2-second number");
+  const result = total(num1, num2);
+  console.log(result);
+  alert("Total number: " + result);
+}
+
+function funcdec3() {
+  function secund(hour) {
+    return hour * 3600;
+  }
+  const hour = +prompt("Creat hour :");
+  const result = secund(hour);
+  alert("result on secund: " + result + " secund");
+}
+
+function funcexp3() {
+  let second = function (hour) {
+    return hour * 3600;
+  };
+
+  const hour = +prompt("Creat hour : ");
+  const result = second(hour);
+  alert(`Result on hour${result}`);
+}
+
+function funcarr3() {
+  const secund = (hour) => {
+    const time = hour * 3600;
+    return time;
+  };
+
+  const hour = +prompt("Creat hour : ");
+  const result = secund(hour);
+  alert(`${hour} hour  = ${result}  secund`);
+}
+
+function funcdec4() {
+  function SquarePerandFace(squareside) {
+    return squareside;
+  }
+  const squareside = +prompt("The value of the side of the square :");
+  const side = SquarePerandFace(squareside);
+  per = side * 4;
+  face = side * side;
+  alert(`Square peremetres = : ${per}\n Square face = ${face}`);
+}
+
+function funcexp4() {
+  let SquarePerandFace = function (squareside) {
+    return squareside;
+  };
+  const squareside = +prompt("The value of the side of the square :");
+  const side = SquarePerandFace(squareside);
+  per = side * 4;
+  face = side * side;
+  alert(`Square peremetres = : ${per}\n Square face = ${face}`);
+}
+
+function funcarr4() {
+  const SquarePerandFace = (squareside) => {
+    return squareside;
+  };
+  const squareside = +prompt("The value of the side of the square :");
+  const side = SquarePerandFace(squareside);
+  per = side * 4;
+  face = side * side;
+  alert(`Square peremetres = : ${per}\n Square face = ${face}`);
+}
+
+function funcdec5() {
+  function EvenorOdd(num) {
+    if (num % 2 === 0) {
+      return "even";
     } else {
-      return " manfiy";
+      return " odd";
     }
   }
-  const son = +prompt("son kiriting:");
-  const natija = musbatyokimanfiy(son);
-  alert(son + " soni " + natija);
+  const num = +prompt("Inter number:");
+  const result = EvenorOdd(num);
+  alert(` the number ${num}  ${result}`);
 }
-function func7() {
-  function kunsoat(yosh) {
-    return yosh;
+
+function funcexp5() {
+  const EvenorOdd = function (num) {
+    if (num % 2 === 0) {
+      return "even";
+    } else {
+      return "odd";
+    }
+  };
+
+  const num = +prompt("inter number:");
+  const result = EvenorOdd(num);
+  alert(`the number ${num} ${result}`);
+}
+function funcarr5() {
+  const EvenorOdd = (num) => {
+    return num;
+  };
+  const num = +prompt("Inter number:");
+
+  const result = EvenorOdd(num);
+  if (isNaN(result) == true || result == " ") {
+    alert(`Thank you`);
+  } else {
+    if (result % 2 === 0) {
+      alert(`the number ${result} even`);
+    } else {
+      alert(`the number ${result} odd`);
+    }
   }
-  const yosh = +prompt("yoshingizni kiriting:");
-  const natija = kunsoat(yosh);
-  kun = natija * 365;
-  soat = kun * 24;
-  alert(`siz ${kun} kun ${soat} soat yashadiz `);
+}
+
+function funcdec6() {
+  function PositiveOrNegative(num) {
+    if (num > 0) {
+      return "Positive";
+    } else {
+      return " Nigative";
+    }
+  }
+  const num = +prompt("Inter number:");
+  const result = PositiveOrNegative(num);
+  alert(`number ${num}  ${result}`);
+}
+
+function funcexp6() {
+  const PositiveOrNegative = function (num) {
+    if (num > 0) {
+      return "positive";
+    } else {
+      return "nigative";
+    }
+  };
+  const num = +prompt("Inter number:");
+  const result = PositiveOrNegative(num);
+  alert(`the number ${num}  ${result}`);
+}
+
+function funcarr6() {
+  const PositiveOrNegative = (num) => {
+    if (num > 0) {
+      return "positive";
+    } else {
+      return "nigative";
+    }
+  };
+  const num = +prompt("Inter number:");
+  const result = PositiveOrNegative(num);
+  alert(`the number ${num} ${result}`);
+}
+
+function funcdec7() {
+  function DayHour(year) {
+    return year;
+  }
+  const year = +prompt("How old is your age ?:");
+  const result = DayHour(year);
+  day = result * 365;
+  hour = day * 24;
+  alert(`You ${day} day ${hour}  hours `);
+}
+
+function funcexp7() {
+  const DayHour = function (year) {
+    return year;
+  };
+  const year = +prompt(`Inter your age :`);
+  const result = DayHour(year);
+  const day = result * 365;
+  const hour = day * 24;
+  alert(` You live ${day} day ${hour}  hours`);
+}
+
+function funcarr7() {
+  const DayHour = (year) => {
+    return year;
+  };
+  const year = +prompt("Inter your age:");
+  const result = DayHour(year);
+  const day = result * 365;
+  const hour = day * 24;
+
+  alert(`you live ${day} day ${hour} hours`);
 }
 
 //film taks--------------------------------------------------------
 
-function func8() {
+function funcdec8() {
   let like = confirm("film yoqtirasizmi?");
 
   if (like !== true) {

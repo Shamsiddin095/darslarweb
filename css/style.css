@@ -22,12 +22,12 @@ main {
   position: absolute;
   display: flex;
   flex-direction: column;
-  background: rgb(0, 0, 0);
-  left: -280px;
+  background: rgb(3, 2, 2);
+  left: 0px;
   width: 300px;
   height: 200vh;
   position: fixed;
-  border-right: 20px solid rgb(6, 145, 99);
+  border-right: 10px solid rgb(6, 145, 99);
 }
 .sidebar:hover {
   left: 0;
@@ -119,18 +119,22 @@ label:hover {
 }
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   align-items: center;
   display: none;
   max-width: 100%;
 }
 .content img {
-  width: 100%;
+  width: 50%;
+}
+#strelka {
+  width: 20%;
 }
 .content button {
   background: rgb(9, 144, 45);
   color: white;
-  width: 100%;
+  width: 30%;
   font-size: 20px;
   padding: 10px 20px;
   border: none;
@@ -195,7 +199,61 @@ input:checked ~ label ~ .content {
 .array_label:hover {
   background: rgb(134, 77, 77);
 } */
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 1400px) {
+  .sidebar {
+    left: -280px;
+  }
+  .sidebar:hover {
+    left: 0;
+    transition: all 1.5s ease;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content img {
+    width: 50%;
+  }
+  #strelka {
+    width: 20%;
+  }
+  .content button {
+    width: 30%;
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    display: none;
+    max-width: 100%;
+  }
+  .content img {
+    width: 100%;
+  }
+  #strelka {
+    width: 30%;
+    transform: rotate(-90deg);
+  }
+  .content button {
+    margin-top: 10px;
+    width: 90%;
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+} */
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  #strelka {
+    width: 30%;
+    transform: rotate(-90deg);
+  }
   label {
     background: rgb(102, 178, 211);
     width: 70%;
