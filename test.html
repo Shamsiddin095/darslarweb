@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox and Input Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #imageContainer {
+        text-align: center;
+      }
+
+      #myImage {
+        max-height: 300px;
+        transition: max-height 0.5s;
+      }
+
+      #infoInput {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="imageContainer">
+      <img
+        id="myImage"
+        src="path_to_your_image.jpg"
+        alt="Sample Image"
+        width="300"
+      />
+      <br />
+      <label for="checkBox">Show Image</label>
+      <input type="checkbox" id="checkBox" />
+      <br />
+      <label for="infoInput">Enter Information:</label>
+      <input type="text" id="infoInput" />
+    </div>
+
+    <script>
+      var showImageCheckbox = document.getElementById("checkBox");
+      var infoInput = document.getElementById("infoInput");
+      var myImage = document.getElementById("myImage");
+
+      showImageCheckbox.addEventListener("change", function () {
+        // Toggle image visibility with animation
+        if (showImageCheckbox.checked) {
+          myImage.style.maxHeight = "100%";
+        } else {
+          myImage.style.maxHeight = "0";
+        }
+
+        // Save state to local storage
+        localStorage.setItem("showImage", showImageCheckbox.checked);
+      });
+
+      infoInput.addEventListener("input", function () {
+        // Save input value to local storage
+        localStorage.setItem("infoInput", infoInput.value);
+      });
+
+      // Initialize the state based on local storage
+      showImageCheckbox.checked = localStorage.getItem("showImage") === "true";
+      myImage.style.maxHeight = showImageCheckbox.checked ? "100%" : "0";
+
+      infoInput.value = localStorage.getItem("infoInput") || "";
+    </script>
+  </body>
+</html>
